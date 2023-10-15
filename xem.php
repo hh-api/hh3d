@@ -11,9 +11,7 @@ $ten_phim = $get_info['ten_phim'];
 $ten_goc = $get_info['ten_goc'];
 $noi_dung = $get_info['noi_dung'];
 $nam_chieu = $get_info['nam_chieu'];
-$the_loai = $get_info['the_loai'];
 $quoc_gia = $get_info['quoc_gia'];
-$dien_vien = $get_info['dien_vien'];
 $trang_thai = $get_info['trang_thai'];
 $thoi_luong = $get_info['thoi_luong'];
 $bole = $get_info['bole'];
@@ -113,7 +111,7 @@ $auto = 'https://ssplay.net/loading.php';
 <?php } ?>
 
 <?php if (($vs) and ($vs!='-')) { ?>
-<button class="<?php if ($tm) { echo 'green'; } else { echo 'yellow'; }?>" onclick="document.getElementById('hh3d').src = 'https://zophim.net/s/<?php echo $vs; ?>.html'">Z-VS</button>
+<button class="<?php if (($tm) and ($tm!='-')) { echo 'green'; } else { echo 'yellow'; }?>" onclick="document.getElementById('hh3d').src = 'https://zophim.net/s/<?php echo $vs; ?>.html'">Z-VS</button>
 <?php } ?>
 
 <?php if (($vs) and ($vs!='-')) { ?>
