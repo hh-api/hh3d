@@ -19,11 +19,6 @@ $bole = $get_info['bole'];
 if (strpos($thumb, 'imgur.com') == true)  {
 $thumb = str_replace('.jpg', 'l.jpg', $get_info['thumb']);
 }
-$luotxem = $get_info['view'];
-$luotxem1 = $luotxem + mt_rand(1,9);
-$view_day = $get_info['view_day'];
-$view_day1 = $view_day + 1;
-$run = mysqli_query($apizophim, "UPDATE phim SET `view`='$luotxem1',`view_day`='$view_day1' where `slug`='".$slug."'");
 ?>
 
 <title><?php echo $ten_phim;?> - <?php echo $ten_goc;?> Vietsub, Thuyết Minh</title>
